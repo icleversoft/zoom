@@ -1,0 +1,4 @@
+/home/abekt/.rvm/rubies/ruby-1.9.3-p194/bin/ruby extconf.rb 
+extconf.rb:5: Invalid break
+extconf.rb:10: Invalid break
+extconf.rb: compile error (SyntaxError)
