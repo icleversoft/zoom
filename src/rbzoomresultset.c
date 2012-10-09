@@ -66,7 +66,8 @@ rbz_resultset_set_option (VALUE self, VALUE key, VALUE val)
 {
     ZOOM_resultset_option_set (rbz_resultset_get (self),
                                RVAL2CSTR (key),
-                               RVAL2CSTR (rb_obj_as_string (val)));
+                               RVAL2CSTR (val));
+                               //RVAL2CSTR (rb_obj_as_string (val)));
     
     return self;
 }
