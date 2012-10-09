@@ -1,4 +1,4 @@
-zoom-0.4.1
+zoom-0.4.2
 ==========
 
-zoom gem component for rails 3+
+Now ruby-zoom 0.4.2 supports ruby-1.9.3
