@@ -207,7 +207,7 @@ rbz_connection_set_option (VALUE self, VALUE key, VALUE val)
     connection = rbz_connection_get (self);
     ZOOM_connection_option_set (connection,
                                 RVAL2CSTR (key),
-                                RVAL2CSTR (rb_obj_as_string (val)));
+                                RVAL2CSTR (val));
     RAISE_IF_FAILED (connection); 
     
     return self;
@@ -285,7 +285,7 @@ rbz_connection_package(VALUE self)
 {
   ZOOM_connection connection;
   ZOOM_options options;
-  //ZOOM_package package;
+//ZOOM_package package;
   VALUE package;
 
   connection = rbz_connection_get (self);

@@ -32,16 +32,15 @@ ruby_hash_to_zoom_options (VALUE hash)
     options = ZOOM_options_create ();
     
     ary = rb_funcall (hash, rb_intern ("to_a"), 0);
+    //for (i = 0; i < RARRAY (ary)->len; i++) {
     for (i = 0; i < RARRAY_LEN (ary); i++) {
-      /*
-        pair = RARRAY (ary)->ptr[i];
+       /*pair = RARRAY (ary)->ptr[i];
         key = RARRAY (pair)->ptr[0];
         value = RARRAY (pair)->ptr[1];
-      */  
-        pair = RARRAY_PTR (ary)[i];
-        key = RARRAY_PTR (pair)[0];
-        value = RARRAY_PTR (pair)[1];
-
+       */ 
+       pair = RARRAY_PTR (ary)[i];
+       key = RARRAY_PTR (pair)[0];
+       value = RARRAY_PTR (pair)[1];
         switch (TYPE (value)) {
             case T_TRUE:
             case T_FALSE:

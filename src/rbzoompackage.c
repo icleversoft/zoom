@@ -95,7 +95,7 @@ rbz_package_set_option (VALUE self, VALUE key, VALUE val)
     package = rbz_package_get (self);
     ZOOM_package_option_set (package,
                                 RVAL2CSTR (key),
-                                RVAL2CSTR (rb_obj_as_string (val)));
+                                RVAL2CSTR (val));
    
     return self;
 }

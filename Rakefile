@@ -1,4 +1,4 @@
-RUBY_ZOOM_VERSION = '0.4.1'
+RUBY_ZOOM_VERSION = '0.4.2'
 
 require 'rubygems'
 require 'rake'
